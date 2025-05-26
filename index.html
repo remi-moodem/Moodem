@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moodem - Bien-être intérieur</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #f6f5f3;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #dfe8dc;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #555;
+      font-style: italic;
+    }
+    .section {
+      padding: 3rem 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #2e4a35;
+    }
+    .cta {
+      background: #a8c1a4;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 10px;
+      margin: 2rem 0;
+    }
+    .cta button {
+      background: #4c6e52;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .cta button:hover {
+      background: #3e5843;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      padding: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Open Sans', sans-serif;
+    }
+    footer {
+      background: #ececec;
+      padding: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #4c6e52;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Moodem</h1>
+    <p>"Moodem, un espace sûr. Pour te détacher et te retrouver."</p>
+  </header>
+
+  <section class="section">
+    <h2>3 Jours Pour Me Reconnecter</h2>
+    <p>Un mini-kit gratuit pour revenir à toi : respiration guidée, carnet d'expression, carte mentale du calme intérieur.</p>
+    <div class="cta">
+      <p>Télécharge le kit gratuitement 👇</p>
+      <button>Télécharger le kit</button>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Ce que Moodem t'offre</h2>
+    <ul>
+      <li>📄 Rituels simples (PDF ou audio)</li>
+      <li>🎵 Musiques relaxantes pour cuisiner, faire le ménage ou bouger</li>
+      <li>📬 Newsletter gratuite et hebdomadaire</li>
+      <li>🎧 Audios & ebooks plus complets pour 4,99€</li>
+      <li>💎 Abonnement deluxe à 3€/mois</li>
+      <li>🛒 Produits partenaires (Amazon, etc.) pour compléter ton bien-être</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Inscription gratuite</h2>
+    <p>Reçois ton mini kit PDF ainsi que ton podcast, et rejoins la Newsletter !</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST" onsubmit="this.querySelector('button').innerText='Envoi...'; this.querySelector('button').disabled=true;">
+      <input type="email" name="email" placeholder="Ton adresse e-mail" required>
+      <input type="hidden" name="_subject" value="Nouvelle inscription à Moodem">
+      <input type="hidden" name="_next" value="https://votre-domaine.fr/merci.html">
+      <button type="submit">Recevoir le kit</button>
+    </form>
+    <p style="font-size: 0.9rem; color: #555; margin-top: 0.5rem;">Nous ne partageons jamais votre adresse e-mail. Désinscription possible à tout moment.</p>
+  </section>
+
+  <section class="section">
+    <h2>Qui suis-je ?</h2>
+    <p>Je suis Rémi, et j'ai longtemps cru que le bien-être, c'était être calme, mince et en forme. Mais j'ai découvert que c'est surtout accepter le chaos, ralentir et faire de la place pour qui on est. Je ne suis pas coach. Je suis juste comme toi. Et j'ai décidé de créer un endroit pour respirer.</p>
+  </section>
+
+  <footer>
+    <p>Moodem © 2025 — Créé avec amour 🌿</p>
+    <p>Réseaux sociaux bientôt disponibles</p>
+  </footer>
+</body>
+</html>
